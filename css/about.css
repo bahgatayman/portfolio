@@ -1,0 +1,31 @@
+
+
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.divo{
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.aboutt{
+    border-radius: 4%;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+width: 800px;
+height: 400px;
+background-image: url("back.jpg");
+}
