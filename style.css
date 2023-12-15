@@ -104,8 +104,9 @@ section{
 }
 
 .home-img{
-    width: 630px;
-    height: 630px;
+    width: 530px;
+    height: 530px;
+    border-radious:50px
 }
 
 .home-img img{
