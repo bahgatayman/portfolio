@@ -1,0 +1,305 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      padding: 30px;
+      max-width: 1000px;
+      width: 100%;
+      min-height: 700px;
+      border: 1px solid #363636d7;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+      position: relative;
+      transition: transform 0.5s ease;
+    }
+
+    /* .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2);
+    } */
+
+    .profile-container {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .imgportfolio {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 20px;
+      border: 1px solid #888686d7;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .imgportfolio:hover {
+        /* scale: 1.1; */
+      transform: scale(1.1);
+      box-shadow: 0 10px 25px rgba(199, 255, 48, 0.3);
+    }
+
+    .hire-btn {
+      position: absolute;
+      background-color: #c7ff30;
+      color: black;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 8px;
+      top: 20px;
+      left: 20px;
+      animation: pulse 1.5s infinite;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+
+    .hire-btn:hover {
+      background-color: #b0e026;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .social-icons {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .social-icons a {
+      background: #333;
+      padding: 10px;
+      border-radius: 50%;
+      display: inline-flex;
+      transition: all 0.3s ease;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icons a:hover {
+      background-color: #c7ff30;
+      transform: translateY(-5px);
+    }
+
+    .social-icons i {
+      font-size: 20px;
+      color: white;
+    }
+
+    .social-icons a:hover i {
+      color: black;
+    }
+
+    .title {
+      margin: 15px 0 5px;
+      font-size: 2rem;
+      font-weight: 700;
+      animation: fadeIn 1s ease;
+    }
+
+    .subtitle {
+      color: #c7ff30;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+      color: #ccc;
+      animation: fadeIn 2s ease;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease;
+    }
+
+    .buttons button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      min-width: 150px;
+    }
+
+    .contact {
+      background-color: #c7ff30;
+      color: black;
+    }
+
+    .download {
+      background-color: #333;
+      color: white;
+      border: 1px solid #c7ff30;
+    }
+
+    .contact:hover,
+    .download:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(199, 255, 48, 0.3);
+    }
+
+    .download:hover {
+      background-color: #c7ff30;
+      color: black;
+    }
+
+    .skills {
+      margin: 30px auto;
+      max-width: 600px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .skills-title {
+      color: #c7ff30;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .skill {
+      background-color: #333;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .skill:hover {
+      background-color: #c7ff30;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .card {
+        padding: 20px;
+        min-height: auto;
+      }
+      
+      .imgportfolio {
+        max-width: 300px;
+      }
+      
+      .social-icons {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .buttons button {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 15px;
+      }
+      
+      .title {
+        font-size: 1.5rem;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .imgportfolio {
+        max-width: 250px;
+      }
+      
+      .hire-btn {
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+    }
